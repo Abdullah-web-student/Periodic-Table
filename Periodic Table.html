@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <!-- <link rel="stylesheet" href="table.css"> -->
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+.main_body {
+    width: 1000px;
+    height: 378px;
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px;
+    grid-template-rows: 54px 54px 54px 54px 54px 54px 54px;
+}
+
+
+body {
+    background-color: black;
+}
+h1{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    /* margin-top: 100PX;
+    margin-bottom: -160px; */
+    /* margin-right: 200px; */
+    /* margin-left: -220PX; */
+    font-family: monospace;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 6;
+    grid-column-end: 7;
+
+}
+p{
+    font-weight: bold;
+    background-color: white;
+    line-height: 20px;
+    height: 20px;
+    border-radius: 100px;
+    width: 790px;
+    border: 2px solid white;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    color: black;
+}
+.items {
+    background-color: aqua;
+    color: black;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 50px;
+    font-family: sans-serif;
+
+
+}
+
+.items:hover{
+    color: white;
+    border-color: purple;
+    background-color: purple;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    /* border-radius: 6px 24px 6px 24px; */
+    cursor: default;
+}
+
+/* .container1 .items{
+    background-color: beige;
+} */
+
+  
+.container1 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 8;
+
+
+}
+
+.container2 {
+    /* background-color: red; */
+    text-align: center;
+    /* margin-top: 54px; */
+    /* margin-left: 300px; */
+    grid-row-start: 2;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 8;
+
+}
+
+.container3 {
+    text-align: center;
+    /* margin-top: 162px; */
+    /* margin-left: 300px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+
+.container4 {
+    text-align: center;
+    /* margin-top: 162px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+}
+
+.container5 {
+    text-align: center;
+    /* margin-top: 162px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+}
+
+.container6 {
+    text-align: center;
+    /* margin-top: 162px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 6;
+    grid-column-end: 7;
+
+}
+
+.container7 {
+    text-align: center;
+    /* margin-top: 162px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 7;
+    grid-column-end: 8;
+
+}
+
+.container8 {
+    text-align: center;
+    /* margin-top: 162px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 8;
+    grid-column-end: 9;
+
+}
+
+.container9 {
+    text-align: center;
+    /* margin-top: 162px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 9;
+    grid-column-end: 10;
+
+}
+
+.container10 {
+    text-align: center;
+    /* margin-top: 162px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 10;
+    grid-column-end: 11;
+
+}
+
+.container11 {
+    text-align: center;
+    /* margin-top: 162px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 11;
+    grid-column-end: 12;
+
+}
+
+.container12 {
+    text-align: center;
+    /* margin-top: 162px; */
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 12;
+    grid-column-end: 13;
+
+}
+
+.container13 {
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    grid-column-start: 13;
+    grid-column-end: 14;
+
+}
+
+.container14 {
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    grid-column-start: 14;
+    grid-column-end: 15;
+
+}
+
+.container15 {
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    grid-column-start: 15;
+    grid-column-end: 16;
+
+}
+
+.container16 {
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    grid-column-start: 16;
+    grid-column-end: 17;
+
+}
+
+.container17 {
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    grid-column-start: 17;
+    grid-column-end: 18;
+
+}
+
+.container18 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    grid-column-start: 18;
+    grid-column-end: 19;
+
+}
+
+/* Second table */
+
+.main_body_2{
+    width: 800px;
+    height: 106px;
+    /* border: solid 2px; */
+    display: grid;
+    grid-template-columns: 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px 54px;
+    grid-template-rows: 54px 54px;
+
+}
+
+.main_body_2 .container1 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+.main_body_2 .container2 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+.main_body_2 .container3 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+.main_body_2 .container4 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+}
+.main_body_2 .container5 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+}
+.main_body_2 .container6 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 6;
+    grid-column-end: 7;
+
+}
+.main_body_2 .container7 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 8;
+
+}
+.main_body_2 .container8 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 8;
+    grid-column-end: 9;
+
+}
+.main_body_2 .container9 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 9;
+    grid-column-end: 10;
+
+}
+.main_body_2 .container10 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 10;
+    grid-column-end: 11;
+
+}
+.main_body_2 .container11 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 11;
+    grid-column-end: 12;
+
+}
+.main_body_2 .container12 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 12;
+    grid-column-end: 13;
+
+}
+.main_body_2 .container13 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 13;
+    grid-column-end: 14;
+
+}
+.main_body_2 .container14 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 14;
+    grid-column-end: 15;
+
+}
+.main_body_2 .container15 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 15;
+    grid-column-end: 16;
+
+}
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="main_body">
+            <h1>Periodic Table</h1>
+
+            <div class="container1">
+                <div class="items">H</div>
+                <div class="items">He</div>
+                <div class="items">Li</div>
+                <div class="items">Be</div>
+                <div class="items">B</div>
+                <div class="items">C</div>
+                <div class="items">N</div>
+            </div>
+            <div class="container2">
+                <div class="items">O</div>
+                <div class="items">F</div>
+                <div class="items">Ne</div>
+                <div class="items">Na</div>
+                <div class="items">Mg</div>
+                <div class="items">Al</div>
+            </div>
+
+            <div class="container3">
+                <div class="items">Si</div>
+                <div class="items">P</div>
+                <div class="items">S</div>
+                <div class="items">Cl</div>
+            </div>
+            <div class="container4">
+                <div class="items">Ar</div>
+                <div class="items">K</div>
+                <div class="items">Ca</div>
+                <div class="items">Sc</div>
+            </div>
+            <div class="container5">
+                <div class="items">Ti</div>
+                <div class="items">V</div>
+                <div class="items">Cr</div>
+                <div class="items">Mn</div>
+            </div>
+            <div class="container6">
+                <div class="items">Fe</div>
+                <div class="items">Co</div>
+                <div class="items">Ni</div>
+                <div class="items">Cu</div>
+            </div>
+            <div class="container7">
+                <div class="items">Zn</div>
+                <div class="items">Ga</div>
+                <div class="items">Ge</div>
+                <div class="items">As</div>
+            </div>
+            <div class="container8">
+                <div class="items">Se</div>
+                <div class="items">Br</div>
+                <div class="items">Kr</div>
+                <div class="items">Rb</div>
+            </div>
+            <div class="container9">
+                <div class="items">Sr</div>
+                <div class="items">Y</div>
+                <div class="items">Zr</div>
+                <div class="items">Nb</div>
+            </div>
+            <div class="container10">
+                <div class="items">Mo</div>
+                <div class="items">Tc</div>
+                <div class="items">Ru</div>
+                <div class="items">Rh</div>
+            </div>
+            <div class="container11">
+                <div class="items">Pd</div>
+                <div class="items">Ag</div>
+                <div class="items">Cd</div>
+                <div class="items">In</div>
+            </div>
+            <div class="container12">
+                <div class="items">Sn</div>
+                <div class="items">Sb</div>
+                <div class="items">Te</div>
+                <div class="items">I</div>
+            </div>
+
+            <div class="container13">
+                <div class="items">Xe</div>
+                <div class="items">Cs</div>
+                <div class="items">Ba</div>
+                <div class="items">La</div>
+                <div class="items">Ce</div>
+                <div class="items">Pr</div>
+            </div>
+            <div class="container14">
+                <div class="items">Nd</div>
+                <div class="items">Pm</div>
+                <div class="items">Sm</div>
+                <div class="items">Eu</div>
+                <div class="items">Gd</div>
+                <div class="items">Tb</div>
+            </div>
+            <div class="container15">
+                <div class="items">Dy</div>
+                <div class="items">Ho</div>
+                <div class="items">Er</div>
+                <div class="items">Tm</div>
+                <div class="items">Yb</div>
+                <div class="items">Lu</div>
+            </div>
+            <div class="container16">
+                <div class="items">Hf</div>
+                <div class="items">Ta</div>
+                <div class="items">W</div>
+                <div class="items">Re</div>
+                <div class="items">Os</div>
+                <div class="items">Ir</div>
+            </div>
+            <div class="container17">
+                <div class="items">Pt</div>
+                <div class="items">Au</div>
+                <div class="items">Hg</div>
+                <div class="items">Tl</div>
+                <div class="items">Pb</div>
+                <div class="items">Bi</div>
+            </div>
+
+            <div class="container18">
+                <div class="items">Po</div>
+                <div class="items">At</div>
+                <div class="items">Rn</div>
+                <div class="items">Fr</div>
+                <div class="items">Ra</div>
+                <div class="items">Ac</div>
+                <div class="items">Th</div>
+            </div>
+
+        </div>
+        <br> <br>
+        <div class="main_body_2">
+
+            <div class="container1">
+                <div class="items">Pa</div>
+                <div class="items">U</div>
+            </div>
+            <div class="container2">
+                <div class="items">Np</div>
+                <div class="items">Pu</div>
+            </div>
+            <div class="container3">
+                <div class="items">Am</div>
+                <div class="items">Cm</div>
+            </div>
+            <div class="container4">
+                <div class="items">Bk</div>
+                <div class="items">Cf</div>
+            </div>
+            <div class="container5">
+                <div class="items">Es</div>
+                <div class="items">Fm</div>
+            </div>
+            <div class="container6">
+                <div class="items">Md</div>
+                <div class="items">No</div>
+            </div>
+            <div class="container7">
+                <div class="items">Ba</div>
+                <div class="items">La</div>
+
+            </div>
+            <div class="container8">
+                <div class="items">Li</div>
+                <div class="items">Be</div>
+
+            </div>
+            <div class="container9">
+                <div class="items">Lr</div>
+                <div class="items">Bk</div>
+
+            </div>
+            <div class="container10">
+                <div class="items">Re</div>
+                <div class="items">Os</div>
+
+            </div>
+            <div class="container11">
+                <div class="items">Fr</div>
+                <div class="items">Ra</div>
+
+            </div>
+            <div class="container12">
+                <div class="items">Re</div>
+                <div class="items">Os</div>
+
+            </div>
+            <div class="container13">
+                <div class="items">Np</div>
+                <div class="items">Pu</div>
+
+            </div>
+            <div class="container14">
+                <div class="items">Au</div>
+                <div class="items">Hg</div>
+
+            </div>
+            <div class="container15">
+                <div class="items">Bk</div>
+                <div class="items">Cf</div>
+
+            </div>
+
+        </div>
+        <p>The periodic table categorizes elements by atomic number and properties, aiding in understanding their
+            behavior.</p>
+    </center>
+</body>
+
+</html>
